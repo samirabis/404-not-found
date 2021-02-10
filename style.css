@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono&family=Montserrat:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container .logo {
+  /* 404 not found */
+
+  position: absolute;
+  width: 133px;
+  height: 25px;
+  left: 77px;
+  top: 40px;
+
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+
+.container .section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 93vh;
+}
+
+.container .section img {
+  height: 500px;
+}
+
+.container .section .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 586px;
+  margin: 120px 0px;
+}
+
+.container .section .col h1 {
+  height: 190px;
+  left: 735px;
+  top: 265px;
+  margin-bottom: 31px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+
+.container .section .col p {
+  width: 381px;
+  font-family: Space Mono;
+  font-weight: 400;
+  color: #4f4f4f;
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  margin-bottom: 64px;
+}
+.container .section .col a {
+  background: #333333;
+  width: 216px;
+  height: 68px;
+  font-family: Space Mono;
+  font-style: 700;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot {
+  text-align: center;
+  font-size: 14px;
+  margin: 25px 0;
+  font-family: "Montserrat";
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .container .logo {
+    position: absolute;
+    font-size: 24px;
+    left: 24px;
+    top: 20px;
+  }
+  .container .section {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container .section img {
+    margin: 64px 0px;
+    height: 300px;
+    align-items: center;
+  }
+  .container .section .col {
+    display: contents;
+  }
+  .container .section .col h1 {
+    font-size: 48px;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .container .section .col p {
+    font-size: 18px;
+    width: 90%;
+    margin-bottom: 60px;
+    align-items: left;
+  }
+}
